@@ -5,3 +5,5 @@ här ska jag testa lite saker med google analytics
 Klicka gärna runt lite
 
 [Read More](/read-more)
+
+[Articles](/Articles)
