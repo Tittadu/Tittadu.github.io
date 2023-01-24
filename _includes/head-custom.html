@@ -8,4 +8,29 @@
 
   gtag('config', 'G-XTCRED3VYN');
 </script>
+<script>
+  function SenReadEvent(title, number_of_characters){
+    gtag('event','read_article', {
+            "author":"Emil A",
+            "title":title,
+            "number_of_characters":number_of_characters,
+        });
+}
+
+document.addEventListener("DOMContentLoaded",() => {
+    document.getElementById("read-article-1").addEventListener("click", () => {
+        SenReadEvent("Article 1", 50)        
+     });
+     document.getElementById("read-article-2").addEventListener("click", () => {
+        SenReadEvent("Article 2", 100)        
+     });
+     document.getElementById("read-article-3").addEventListener("click", () => {
+        SenReadEvent("Article 3", 150)        
+     });
+    });
+
+</script>
+<script>
+  console.log("2023-01-24")
+</script>
 
