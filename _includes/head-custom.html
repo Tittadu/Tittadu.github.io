@@ -19,33 +19,27 @@
 
 document.addEventListener("DOMContentLoaded",() => {
 
-  document.addEventListener("DOMContentLoaded",() => {
-
     const readArticle1Button = document.getElementById("read-article-1");
 
     if(readArticle1Button) {
+    
     readArticle1Button.addEventListener("click", () => {
         SendReadEvent("Article 1", 50)        
-     });
+    });
 
         document.getElementById("read-article-2").addEventListener("click", () => {
         SendReadEvent("Article 2", 100)        
-     });
+        });
 
         document.getElementById("read-article-3").addEventListener("click", () => {
         SendReadEvent("Article 3", 150)   
      
-     });
+        });
+    
     }    
 });
-  
-     
-     });
-    }    
-});
-
 </script>
 <script>
-  console.log("2023-01-24 fungerande")
+  console.log("2023-01-24 fungerande 1")
 </script>
 
