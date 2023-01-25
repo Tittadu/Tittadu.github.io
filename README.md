@@ -6,4 +6,4 @@ Klicka gärna runt lite
 
 [Read More](/read-more)
 
-[Articles](/Articles)
+[Articles](/articles)
