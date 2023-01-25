@@ -7,3 +7,5 @@ Klicka gärna runt lite
 [Read More](/read-more)
 
 [Articles](/articles)
+
+[Purchase Complete](/purchase-complete)
