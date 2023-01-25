@@ -8,37 +8,36 @@
   gtag('config', 'G-XTCRED3VYN');
 </script>
 <script>
-  function SendReadEvent(title, numberOfCharacters, author){
+  function sendReadEvent(title, numberOfCharacters, author) {
     gtag('event', 'read_article', {
-            "author": author,
-            "title": title,
-            "number_of_characters": numberOfCharacters,
-        });
+        "author": author,
+        "title": title,
+        "number_of_characters": numberOfCharacters,
+    });
 }
 
-document.addEventListener("DOMContentLoaded",() => {
+document.addEventListener("DOMContentLoaded", () => {
 
     const readArticle1Button = document.getElementById("read-article-1");
 
-    if(readArticle1Button) {
-    
-    readArticle1Button.addEventListener("click", () => {
-        SendReadEvent("Article 1", 50, "Emil A")        
-    });
+    if (readArticle1Button) {
+        // Skickar event vid klick på artikel 1
+        readArticle1Button.addEventListener("click", () => {
+            sendReadEvent("Article 1", 50, "Linus R")
+        });
 
+        // Skickar event vid klick på artikel 2
         document.getElementById("read-article-2").addEventListener("click", () => {
-        SendReadEvent("Article 2", 100, "Yoyo man")        
+            sendReadEvent("Article 2", 100, "Anna S")
         });
 
+        // Skickar event vid klick på artikel 3
         document.getElementById("read-article-3").addEventListener("click", () => {
-        SendReadEvent("Article 3", 150, "kennnybenny")   
-     
+            sendReadEvent("Article 3", 150, "Maria S")
         });
-    
-    }    
-});
-</script>
-<script>
-  console.log("2023-01-24 fungerande 1")
-</script>
+    }
 
+});
+  
+ console.log("2023-01-23 2")
+</script>
