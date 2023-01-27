@@ -8,36 +8,32 @@
   gtag('config', 'G-XTCRED3VYN');
 </script>
 <script>
-  function sendReadEvent(title, numberOfCharacters, author) {
-    gtag('event', 'read_article', {
-        "author": author,
-        "title": title,
-        "number_of_characters": numberOfCharacters,
-    });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const readArticle1Button = document.getElementById("read-article-1");
-
-    if (readArticle1Button) {
-        // Skickar event vid klick på artikel 1
-        readArticle1Button.addEventListener("click", () => {
-            sendReadEvent("Article 1", 50, "Linus R")
-        });
-
-        // Skickar event vid klick på artikel 2
-        document.getElementById("read-article-2").addEventListener("click", () => {
-            sendReadEvent("Article 2", 100, "Anna S")
-        });
-
-        // Skickar event vid klick på artikel 3
-        document.getElementById("read-article-3").addEventListener("click", () => {
-            sendReadEvent("Article 3", 150, "Maria S")
+function sendInfoEvent(artikelnamn, lastid) {
+        gtag('event', 'läst_artikel', {
+        "artikel_namn": artikelnamn,
+        "las_tid": lastid,
         });
     }
-
-});
   
- console.log("2023-01-23 2")
+     document.addEventListener("DOMContentLoaded", () => {
+
+        const readTask1Button = document.getElementById("knapp_1");
+    
+        if(readTask1Button) {
+
+            readTask1Button.addEventListener("click", () => {
+            sendInfoEvent("Emils inlamning", 43)
+             });
+
+            document.getElementById("knappen_2").addEventListener("click", () => {
+            sendInfoEvent("Pers inlämning", 8)
+            });
+        }
+
+  
+    });
+  
+ console.log("test för att se 1");
+    
 </script>
+  
