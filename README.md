@@ -9,3 +9,5 @@ Klicka gärna runt lite
 [Articles](/articles)
 
 [Purchase Complete](/purchase-complete)
+
+[Inlämning](/inlamning)
