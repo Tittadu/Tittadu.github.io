@@ -8,4 +8,4 @@ Tryck på mig för att skicka lästid och artikelnamn till GA4
 
 <button id="knappen_2">Läst Artikel 2</button>
 
-<button id="beställ">beställ</button
+<button id="beställ">beställ</button>
