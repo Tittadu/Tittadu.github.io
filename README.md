@@ -12,4 +12,4 @@ Klicka gärna runt lite
 
 [Inlämning](/inlamning)
 
-[https://fabianshemsida.github.io/Fabianshemsida/](/fabians)
+[fabians](/https://fabianshemsida.github.io/Fabianshemsida)
